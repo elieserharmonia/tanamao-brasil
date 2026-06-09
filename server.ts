@@ -43,10 +43,10 @@ app.post('/api/payment/create-preference', async (req, res) => {
 
     if (planId === 'plan-featured') {
       unitPrice = 19.90;
-      title = 'Plano Destaque - TáNaMão Brasil';
+      title = 'Plano Destaque Local - TáNaMão Brasil';
     } else if (planId === 'plan-premium') {
       unitPrice = 39.90;
-      title = 'Plano Premium TáNaMão - TáNaMão Brasil';
+      title = 'Plano Premium Cidade - TáNaMão Brasil';
     } else {
       res.status(400).json({ error: 'Plano inválido para monetização.' });
       return;
