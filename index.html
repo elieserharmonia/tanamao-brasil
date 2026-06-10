@@ -1,25 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#FFD100" />
+    <meta name="description" content="TáNaMão Brasil: encontre profissionais e empresas perto de você. O Brasil encontra aqui." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="TáNaMão" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.json" />
+
+    <meta property="og:title" content="TáNaMão Brasil | O Brasil encontra aqui." />
+    <meta property="og:description" content="Marketplace nacional para encontrar profissionais autônomos e empresas perto de você." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+
     <title>TáNaMão Brasil | O Brasil encontra aqui.</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then(reg => console.log('SW Registered!', reg))
-            .catch(err => console.error('SW Failed!', err));
-        });
-      }
-    </script>
   </body>
 </html>
-
